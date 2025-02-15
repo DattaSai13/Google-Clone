@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(bg5.png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        width: 60%;
+        height: 60%;
+        /* background-color: whitesmoke; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      i{
+        color: black;
+        font-size: 25px;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      .inp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 80%;
+        border-radius: 25px;
+        padding: 0px 20px;
+        margin-top: 30px;
+      }
+      .textfield{
+        font-size: 20px;
+        width: 40vw;
+        border:none;
+        outline: none;
+        padding:  10px;
+        border-radius: 25px;
+        /* background-color: transparent; */
+      }
+      .list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .card{
+        width: 100px;
+        height: 100px;
+        /* background-color: aqua; */
+        color: rgba(19, 7, 7, 0.867);
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding-bottom: 10px;
+      }
+      .circle{
+        width: 50%;
+        height: 50%;
+        border: 1px solid black;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        color: white;
+      }
+      .insta{
+        width: 100%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card:hover{
+        background-color: rgba(205, 197, 186, 0.355);
+        cursor: pointer;
+        .dots{
+          opacity: 1;
+        }
+      }
+      .top-right{
+        width: 230px;
+        height: 50px;
+        /* background-color: aliceblue; */
+        color: white;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* cursor: pointer; */
+      }
+      
+      .dots{
+        font-size: 20px;
+        position: relative;
+        left: 40px;
+        top: 5px;
+        opacity: 0;
+        transition: 0.5s all ease;
+        color: white;
+      }
+      .grid{
+        width: 0px;
+        color: white;
+        cursor: pointer;
+      }
+      .dotts{
+        display: flex;
+      }
+      .gif{
+          width: 40px;
+          border-radius: 50%;
+          cursor: pointer;
+      }
+      .bor:hover{
+        border-bottom: 1px solid white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <img src="google.png" alt="Google" width="40%" />
+        <div class="inp">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <form action="https://www.google.com/search?">
+            <input 
+              type="text"
+              name="q"
+              placeholder="Search Google or type a URL" class="textfield"
+            />
+          </form>
+          <i class="fa-solid fa-microphone"></i>
+          <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="list">
+            <div class="card">
+              <i class="fa-solid fa-ellipsis-vertical dots" ></i>
+                <div class="circle">
+                    <img src="insta[1].png" alt="Insta" class="insta">
+                </div>
+                <p>Instagram</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-ellipsis-vertical dots" ></i>
+                <div class="circle">
+                    <img src="git.png" alt="Github" class="insta">
+                </div>
+                <p>Github</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-ellipsis-vertical dots" ></i>
+                <div class="circle">
+                    <img src="fb1.png" alt="Facebook" class="insta">
+                </div>
+                <p>Facebook</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-ellipsis-vertical dots" ></i>
+                <div class="circle">
+                    <img src="linkdin.png" alt="linkdin" class="insta">
+                </div>
+                <p>Linkdin</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-ellipsis-vertical dots" ></i>
+                <div class="circle">
+                    <img src="wp.png" alt="whatsapp" class="insta">
+                </div>
+                <p>Whatsapp</p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-ellipsis-vertical dots" ></i>
+                <div class="circle">
+                    <img src="add.png" alt="add" class="insta">
+                </div>
+                <p>Add Shortcut</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-right">
+      <p class="bor">Gmail</p>
+      <p class="bor">Images</p>
+      <div class="dotts">
+        <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        <i class="fa-solid fa-ellipsis-vertical grid"></i>
+      </div>
+      <img src="gif.png" class="gif">
+   </div>
+  </body>
+</html>
